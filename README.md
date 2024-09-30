@@ -28,3 +28,32 @@ print("Anyone who\n"
       "\tstops\n"
       "\t\t learning os old,\n"
       "\t\t\t whether at twenty or eighty\n")
+
+
+
+kd=float(input("Введите курс доллара "))
+k=float(input("Введите курс евро "))
+kk=float(input("Введите курс юани "))
+print("1) Перевести из рублей в доллары и евро и юфни\n2)Перевести из доллара и евро и юани в рубли\n")
+vibor=int(input("Выберите ваше действиве\n"))
+if vibor==1:
+    ryb=float(input("Ведите количество рублей "))
+    s1=ryb/kd
+    s2=ryb/k
+    s3=ryb/kk
+    print ("Сумма вашего перевода из рублей в долоры = ",'{:.2f}'.format(s1))
+    print("Сумма вашего перевода из рублей в евро = ", '{:.2f}'.format(s2))
+    print("Сумма вашего перевода из рублей в юани = ", '{:.2f}'.format(s3))
+elif vibor==2:
+    kold=float(input("Введите количество долларов"))
+    kol = float(input("Введите количество евро"))
+    ko = float(input("Введите количество юани"))
+    s1=kold*kd
+    s2=kol*k
+    s3=ko*kk
+    print("Сумма вашего перевода из доллра в рубли = ",' {:.2f}'.format (s1))
+    print("Сумма вашего перевода из евро в рубли = ", ' {:.2f}'.format(s2))
+    print("Сумма вашего перевода из юани в рубли = ", ' {:.2f}'.format(s3))
+else:
+    print("Ошибка!Введите пожалуйста только 1 или 2")
+    exit(0)
