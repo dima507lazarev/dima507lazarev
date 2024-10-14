@@ -153,3 +153,49 @@ if x == 2:
     print("За минут ", b)
 if x == 3:
     print("За часов ", c)
+
+
+s = int(input("Введите количество часов"))
+if s < 0 or s > 23: print('Ошибка')
+elif s <= 7: print("Good night")
+elif s <= 12: print("Good Morning")
+elif s <= 18: print("Good Day")
+else:
+    print("Good Evening")
+
+
+numder = int(input("Введите номер 1 - 7 "))
+if numder < 0 or numder > 7: print('Ошибка')
+elif numder <= 1: print("Понедельник")
+elif numder <= 2: print("Вторник")
+elif numder <= 3: print("Среда")
+elif numder <= 4: print("Четверг")
+elif numder <= 5: print("Пятница")
+elif numder <= 6: print("Суббота")
+elif numder <= 7: print("Воскресенье")
+
+
+
+numder = int(input("Введите номер 1 - 12 "))
+if numder < 0 or numder > 12: print('Ошибка')
+elif numder <= 1: print("Январь")
+elif numder <= 2: print("Февраль")
+elif numder <= 3: print("Март")
+elif numder <= 4: print("Апрель")
+elif numder <= 5: print("Май")
+elif numder <= 6: print("Июнь")
+elif numder <= 7: print("Июль")
+elif numder <= 8: print("Август")
+elif numder <= 9: print("Сентябрь")
+elif numder <= 10: print("Октябрь")
+elif numder <= 11: print("Ноябрь")
+elif numder <= 12: print("Декабрь")
+
+
+number = int(input("Введите число"))
+if number > 0: 
+    print("Numder is positive")
+elif number < 0: 
+    print("Numder is negative")
+else:
+    print("Numder is equal to zero")
