@@ -199,3 +199,51 @@ elif number < 0:
     print("Numder is negative")
 else:
     print("Numder is equal to zero")
+
+
+num = int(input("Введите число"))
+if not num%5:
+    print("Число чётное и кратное 5")
+if num%2 and num%5:
+    print("Число не четное и не кратное 5")
+elif not num%2:
+    print("Число четное и не кратное 5")
+
+
+    kol= int(input("Введите количество литров"))
+ctom = int(input("Введите стоимость за литр"))
+rast = int(input("Введите пройденое растояние"))
+pas = kol * ctom
+rsa = kol / rast * 100
+print(f"Потрачено на топливо: {rsa}\nРасход топлива на 100 км: {pas}")
+
+
+
+
+
+
+
+dox = int(input("Введите ваш доход"))
+if dox < 10000:
+    nal  = 0.05
+if dox > 50000:
+    nal = 0.15
+if 10000 <= dox and dox <= 50000:
+    nal = 0.1
+sum = nal * dox
+print(sum)
+
+
+
+
+r = float(input("Введите рост"))
+v = int(input("Введите вес"))
+bmi = v / r ** 2
+if bmi < 18.5:
+    print("Недостаточный вес")
+if 18.5 <= bmi <= 24.9:
+    print("Норма")
+if 24.9 <= bmi <= 29.9:
+    print("Избыток")
+if 29.9 <= bmi <= 31:
+    print("Ожирение")
