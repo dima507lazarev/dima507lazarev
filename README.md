@@ -291,3 +291,45 @@ elif o == 2:
 elif o == 3:
     idr = meters * 1.09361
     print("количество ядров", idr)
+
+
+count = 0
+while count < 10:
+    count += 1
+    print(count, end="" )
+
+
+
+
+begin = int(input("begin >> "))
+end = int(input("end >> "))
+
+
+
+while begin < end:
+    begin += 1
+    print(begin, end=" ")
+
+
+   while True:    userChoise = input("Действие: [+][0 - ваыход] >> ")
+    
+    if userChoise == '+':
+        print ('Посчиталась сумма')
+        
+    elif userChoise == '0':
+        print('Всего хорошего')
+        break
+    else:
+        print('Вы выбрали что то не то?')
+
+
+count = 0
+while count < 10:
+    count += 1
+    if count == 6:
+      continue
+    print(count, end="" )**
+
+
+continue = пропуск хода
+break = завершить цикл
