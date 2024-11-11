@@ -335,13 +335,31 @@ continue = пропуск хода
 break = завершить цикл
 
 
+num = int(input("Введите число"))
+mul = 1
+while True:
+    result = num * mul
+    print(f"{num} * {mul} = {result}")
+    mul += 1
+    if result > 50:
+        break
 
-n = int(input("Введите число"))
-while n <= 10:
-    s = 1
-    while s <= 10:
-        p = n*s
-        print(n , "*" , s , "=" , p )
-        s = s + 1
-        n = n + 1
-        print("ваше число")
+
+
+for i in range(1, 50):
+    if i % 3 == 0:
+        continue
+    if i % 7 == 0:
+        break
+    print(i)
+
+
+
+b = 1000
+print(f"Остаток в банке: {b}")
+c = int(input("Сколько вы хотите снять "))
+while b >= 0:
+    s = b - c
+    print(f"на счету осталось: {s}")
+    if s <= 0:
+        break
