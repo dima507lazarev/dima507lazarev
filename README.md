@@ -333,3 +333,15 @@ while count < 10:
 
 continue = пропуск хода
 break = завершить цикл
+
+
+
+n = int(input("Введите число"))
+while n <= 10:
+    s = 1
+    while s <= 10:
+        p = n*s
+        print(n , "*" , s , "=" , p )
+        s = s + 1
+        n = n + 1
+        print("ваше число")
