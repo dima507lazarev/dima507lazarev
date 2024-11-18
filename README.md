@@ -363,3 +363,12 @@ while b >= 0:
     print(f"на счету осталось: {s}")
     if s <= 0:
         break
+
+
+Казино
+inport random
+a = input("Что вы будете ставить")
+Casino = [" z ", " zov ", " goida "]
+for i in range(1, 4):
+    print(random.choise(Casino)),random.choise(Casino),random.choise(Casino))
+    print("Вы проиграли", a)
