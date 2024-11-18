@@ -372,3 +372,62 @@ Casino = [" z ", " zov ", " goida "]
 for i in range(1, 4):
     print(random.choise(Casino)),random.choise(Casino),random.choise(Casino))
     print("Вы проиграли", a)
+
+
+
+цикл for\ range \ итератор \ laze evaluation
+итератор - обьект который позволяет перебирать элементы по 
+одному запоминая своё текущее положение
+итерация - один шаг цикла
+range() - встроенная функция котораягенерирует последовательность цисел 
+range(start, stop, step) -> range(1, 10, 3)
+- start ( по иумолчанию 0)
+- stop конечное число ( не включается в последовательность)
+- step (по умолчанию 1) шаг изменения чисел
+-------
+for
+инерируемые обьекты
+(1,2,3,4,5) - const (неизменяемый список)
+[1.2.3.4.5]
+for i in range(start, stop):
+   код_для_выполнения
+   for i in range(10):
+   print(i, end = " ")
+   
+   string_ = "Hello world"
+   for i in string_:
+   if i == 'l'
+   print(i, end = " ")
+---------------
+   библиотека и модуль
+   random() - это функция модуля random из Python
+   необходлимо для возвращения числа в диапазоне:
+    от 0.0 до 1.0
+    -------
+    import random
+    
+    print(random.random()) - 0.0 -> 1.0
+    
+     print(random.randint(1, 10)) 1 -> 10 вкл
+     
+     print(random.uniform(1.5, 10.5))
+     
+     name = ["Валера", "Марк", "Виктор"]
+     print(random.choice(name))-  рандомный выбор из последовательности
+     
+     cards = [1,2,3,4,5]
+     print(random.shuffle(cards)) перемешивание
+     
+ ----------   
+
+
+n = input("Введите число")
+z = 0
+for i in range(1 , n)
+z = z + i
+print(f"Ввод {a} ---> Вывод:", z + a, end=" ")
+print(f"(", end="")
+for i in range(1 , n)
+z = z + i
+print (f"{i}+", end="")
+print(f"{a})", end="")
