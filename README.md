@@ -457,3 +457,62 @@ for i in range(X):
         else:
             print(" ", end=' ')
     print( )
+
+
+ a = int(input("Введите первое число"))
+b = int(input("Введите второе число"))
+s = a + b
+print("Сложение: ",s)
+v = a - b
+print("Вычитание: ",v)
+m = a * b
+print("Умножение: ",m)
+d = a / b
+print("Деление: ", d)
+x = (a / b) * 100
+print("Проценты:", x)
+
+
+
+import turtle
+import math
+
+t = turtle.Turtle()
+t.speed(0)
+t.color("red")
+turtle.bgcolor("black")
+
+def corazon(n):
+    x = 16 * math.sin(n) ** 3
+    y = 13 * math.cos(n) - 5 * \
+        math.cos(2*n) - 2*math.cos(3*n) - \
+        math.cos(4*n)
+    return x, y
+
+t.penup()
+for i in range(15):
+    t.goto(0, 0)
+    t.pendown()
+    for n in range(0, 100, 2):
+        x, y = corazon(n/10)
+        t.goto(x*i, y*i)
+    t.penup()
+
+t.hideturtle()
+turtle.done()
+
+
+
+import time
+
+def countdown():
+    seconds = int(input("Ваедите количество секунд для обратного отсчта"))
+    while seconds > 0:
+        mins , secs = divmod(seconds, 60)
+        timer = f'{mins:02}:{secs:02}'
+        print(timer, end='\r')
+        time.sleep(1)
+        seconds -= 1
+    print("Время вышло")
+
+countdown()
