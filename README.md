@@ -431,3 +431,30 @@ for i in range(1 , n)
 z = z + i
 print (f"{i}+", end="")
 print(f"{a})", end="")
+
+
+
+
+
+Y = 10
+X = 10
+
+for i in range(X):
+    for j in range(Y):
+        if i == 0:
+            print('z', end=" ")
+        elif i !=0 and j > 1:
+            print(" ", end="")
+        if j == 0 and i > 0:
+            print('z', end="")
+        elif j != 0 and i > 0:
+            print(" ", end="")
+        if j == 9 and i > 0:
+            print('z', end=" ")
+        elif j != 9 and i < 0:
+            print(" ", end=" ")
+        if  i == 9 and j > 0 and j < 9:
+            print("z", end=' ')
+        else:
+            print(" ", end=' ')
+    print( )
