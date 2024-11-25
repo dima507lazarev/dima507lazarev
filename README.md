@@ -366,12 +366,11 @@ while b >= 0:
 
 
 Казино
-inport random
+import random
 a = input("Что вы будете ставить")
 Casino = [" z ", " zov ", " goida "]
 for i in range(1, 4):
-    print(random.choise(Casino)),random.choise(Casino),random.choise(Casino))
-    print("Вы проиграли", a)
+    print (random.choice(Casino),random.choice(Casino),random.choice(Casino))
 
 
 
