@@ -516,3 +516,95 @@ def countdown():
     print("Время вышло")
 
 countdown()
+
+
+
+
+IntList = [5,6,9,-2,3,4,8]
+for i in IntList:
+    print(i)
+
+
+
+    numbers = [1,2,3,4,5,6,7,8]
+
+for num in numbers:
+    print(num, end=" ")
+
+print("\n","-" * 10)
+for num in range(len(numbers)):
+    print(numbers[num], end=" ")
+
+
+
+
+    numbers = [1,2,3,4,5,6,7,8]
+numbers.append("вЛАДИСЛАВ");print(*numbers)
+
+
+
+numbers = [1,2,3,4,5,6,7,8]
+numbers.append("Богдан");print(*numbers)
+numbers.insert(2,"Тимофей");print(*numbers)
+numbers.remove("Тимофей");print(*numbers)
+lastElement = numbers.pop(); print(*numbers, f"Удалёный объект: {lastElement}")
+
+
+unsortedList = [7,4,1,5,7,9,4,12,54,6,2,5]
+unsortedList.sort(reverse=True)
+print(*unsortedList)****
+
+
+unsortedList = [7,4,1,5,7,9,4,12,54,6,2,5]
+unsortedList.sort(reverse=True)
+print(*unsortedList)
+
+lenght = len(unsortedList)
+print(f"Длина списка {lenght}")
+
+
+nestList = [
+    [1,2],
+    [3,4],
+    [5,6]
+]
+flattenedList= [num for sublist in nestedList for num in sublist]
+print(flattenedList)****
+
+
+
+unsortedList = [7,4,1,5,7,9,4,12,54,6,2,5]
+unsortedList.sort(reverse=True)
+print(*unsortedList)
+
+lenght = len(unsortedList)
+print(f"Длина списка {lenght}")
+
+
+Firstindex = unsortedList.index(5)
+print(Firstindex)
+
+countElement = unsortedList.count(5)
+print(countElement)
+
+#newList = [expression for item in iterable]
+
+squares = [x ** 2 for x in range(10)]
+print(squares)
+
+eventSquares = [x ** 2 for x in range(10) if x % 2 == 0]
+print(eventSquares)
+
+numbers = [0,1,2,3,4,5,6,7,8,9,]
+subset = numbers[2:6]
+print(subset)
+
+numbers[1:4] = ['x','y','z']
+print(numbers)
+
+
+numbers = []
+for i in range(5):
+    number = int(input("Введите число"))
+    numbers.append(numbers)
+print(f"Ваш список чисел: {number}")
