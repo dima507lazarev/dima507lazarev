@@ -603,8 +603,114 @@ numbers[1:4] = ['x','y','z']
 print(numbers)
 
 
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+numbers = [1,2,3,4,5,6,7,8]
+
+for num in numbers:
+    print(num, end=" ")
+print("\n", "-" * 10)
+for num in range(len(numbers)):
+    print(numbers[num], end=" ")
+
+
+numbers = [1,2,3,4,5]
+numbers.append("Анатолий"); print(*numbers)
+numbers.insert(2, "Олег"); print(*numbers)
+numbers.remove("Олег"); print(*numbers)
+lastElement = numbers.pop(); print(*numbers, f"Удалённый элемент: {lastElement}")
+del numbers
+
+numbers1 =[1,2,3]
+numbers2 =[4,5,6]
+cominedList = numbers1 + numbers2
+print(+cominedList)
+
+originalList = [1,2,3]
+copy0fList = originalList[:]
+print(copy0fList)
+
+unsortedList = 
+unsortedList.sort(reverse = True)
+
+unsortedList.sort
+
+
+if 7 in unsortedList:
+    print("Есть семерка")
+else:
+    print("Нет семерки")
+
+length = len(unsortedList)
+print(f"Длинна списка: {length}")
+
+firstIndex = unsortedList.index(5)
+print(firstIndex)
+
+countElements= unsortedList.count(5)
+print(countElements)
+
+
+#newList = [expression for item in iterable]
+squares = [x **2 for x in range(10)]
+print(squares)
+
+evenSq
+
+
+nestedList = [
+    [1,2]
+    [3,4]
+    [5,6]
+]
+flattenedList = [ num for subList in nestedList for num in subList]
+print(flattenedList)
+
+
+'''
+sequence[start:end:step]
+'''
+numbers = [0,1,2,3,4,5,6,7,8,9]
+subset = numbers[2:5]
+print(subset)
+
+everySecond = numbers[:: - 2]
+print(everySecond)
+
+everySecond = numbers[-3:]
+print(everySecond)
+
+everySecond = numbers[:]
+print(everySecond)
+
+numbers[1:4] = ['X', 'Y', 'Z']
+print(numbers)
+
+numbers[1:4] = []
+print(numbers)
+
+
+numbers = [1,2,2,3,4,5,6,7,7]
+numbers.remove(2)
+numbers.remove(7)
+print(numbers)
+
 numbers = []
-for i in range(5):
-    number = int(input("Введите число"))
-    numbers.append(numbers)
-print(f"Ваш список чисел: {number}")
+numbers.append(int(input("Введите число")))
+numbers.append(int(input("Введите число")))
+numbers.append(int(input("Введите число")))
+numbers.append(int(input("Введите число")))
+numbers.append(int(input("Введите число")))
+print(f"Ваш список чисел:", *numbers)
+for num in numbers:
+    print(f"Сумма {sum(numbers)}")
+
+
+v = num
+for z in numbers:
+    if v > z:
+        v = v
+    else:
+        v = z
+print(f"Самое большое число {v}")
