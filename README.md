@@ -123,11 +123,11 @@ int main(){
 }
 #endif
 
-#ifdef task3
+#ifdef task4
 int main(){
     double a;
     cin >> a;
-    cout << pow(a)+10/sqrt(pow(a)+1) << endl;
+    cout << pow(a,2)+10/sqrt(pow(a,2)+1) << endl;
     return 0;
 }
 #endif
