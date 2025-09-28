@@ -1,3 +1,6 @@
+////////////////////////////
+Дз за 21 сентября
+////////////////////////////
 #include <iostream>
 #include <cmath>
 
@@ -131,3 +134,198 @@ int main(){
     return 0;
 }
 #endif
+////////////////////////////
+ |
+ |
+\ /
+////////////////////////////
+Дз за 28 сентября
+////////////////////////////
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+#define task13
+
+#ifdef task1
+int main(){
+    double x,y;
+    cin >> x;
+    if (x > 0){
+        y = x + 1;
+        cout << y << endl;
+    }else if (x < 0){
+        y = x - 2;
+        cout << y << endl;
+    }else{
+        y = x + 10;
+        cout << y << endl;
+    }
+    return 0;
+}
+#endif
+
+#ifdef task2
+int main(){
+    double x,x1,x2;
+    cin >> x >> x1 >> x2;
+    int p = 0;
+    int o = 0;
+    if (x > 0){
+        p ++;
+    }else{
+        o++;
+    }if(x1 > 0){
+        p++;
+    }else{
+        o++;
+    }if(x2 > 0){
+        p++;
+    }else{
+        o++;
+    }
+    cout << "положительных" << p << endl;
+    cout << "Отрицательных" << o << endl;
+   
+    return 0;
+}
+#endif
+
+#ifdef task3
+int main(){
+    double x,x1;
+    cin >> x >> x1;
+    if (x > x1){
+        cout << x << endl;
+    }else{
+        cout << x1 << endl;
+    }
+
+    return 0;
+}
+#endif
+
+#ifdef task4
+int main(){
+    double a,b,r,r1;
+    cin >> a >> b;
+    if (a > b){
+        r = a - 2;
+        r1 = b + 2;
+    }
+    cout << "Теперь А " << r <<" а B " << r1 << endl;
+    return 0;
+}
+#endif
+
+#ifdef task5
+int main(){
+    int n;
+    cin >> n;
+    int n1 = n / 100;
+    int n2 = (n / 10) % 10;
+    int n3 = n % 10;
+    if (n1 > n2 > n3 ){
+        cout << n2 << endl;
+    }else if(n2 > n1 > n3){
+        cout << n1 << endl;
+    }else{
+        cout << n3 << endl;
+    }
+    return 0;
+    
+}
+#endif
+
+#ifdef task6
+int main(){
+    double a,b,c,a1,b1,c1;
+    cin >> a >> b >> c;
+    a1 = a*2;
+    b1 = b*2;
+    c1 = c*2;
+    if (a<b<c){
+        cout << a1 << b1 << c1 << endl;
+    }else if(a>b<c){
+        cout << -a << -b << -c << endl;
+    }
+    return 0;
+}
+#endif
+
+#ifdef task8
+int main(){
+    double x,r1,r2;
+    cin >> x;
+    r1 = 2*sin(x);
+    r2 = 6-x;
+    if (x > 0){
+        cout << r1 << endl;
+    }else if(x <= 0){
+        cout << r2 << endl;
+    }
+    return 0;
+}
+#endif
+
+#ifdef task9
+int main(){
+    double x,r1,r2;
+    cin >> x;
+    r1 = 2* x;
+    r2 = -3 * x;
+    if(x < -2){
+        cout << r1 << endl;
+    }else if(x > 2){
+        cout << r1 << endl;
+    }else{
+        cout << r2 << endl;
+    }
+    return 0;
+}
+#endif
+
+#ifdef task10
+int main(){
+    double x;
+    cin >> x;
+    if (x <= 0){
+        cout << -x << endl;
+    }else if (x<2){
+        cout << pow(x,2) << endl;
+    }else{
+        cout << 4 << endl;
+    }
+    return 0;
+}
+#endif
+
+#ifdef task11
+int main(){
+    double x;
+    cin >> x;
+    if(x < 0){
+        cout << 0 << endl;
+    } else if(x > 0){
+        cout << 1 << endl;
+    }else{
+        cout << -1 << endl;
+    }
+    return 0;
+}
+#endif
+
+#ifdef task12
+int main(){
+    int x;
+    cin >> x;
+    if((x % 400 == 0) || ((x % 4 == 0) && (x % 100 != 0))){
+        cout << 366 << endl;
+    }else{
+        cout << 365 << endl;
+    }
+    return 0;
+}
+#endif
+////////////////////////////
