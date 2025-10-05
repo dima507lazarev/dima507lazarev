@@ -329,3 +329,110 @@ int main(){
 }
 #endif
 ////////////////////////////
+|
+|
+|
+\/
+ДЗ ЗА 5 ОКТЯРЯ
+////////////////////////////
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+#define task6
+
+#ifdef task1
+int main(){
+    int n,s = 0;
+    cin >> n;
+    for(int i = 1;i <= n;i++){
+        s += i;
+        cout << s << endl;
+    }
+}
+#endif
+
+#ifdef task2
+int main(){
+    double s;
+    for(int i = 1;i <= 25;i++ ){
+        s= 1.5 * i;
+        cout << s << endl;
+    }
+    return 0;
+}
+#endif
+
+#ifdef task3
+int main(){
+    double s;
+    for(int i = 5;i <=30;i= i + 5){
+        s = 3.6 * i;
+        cout << s << endl;
+    }
+    return 0;
+}
+#endif
+
+#ifdef task4
+int main(){
+    double d;
+    int s,t;
+    cin >> s >> t;
+    if (s < 1){
+        return 1;
+    }
+    for(int i = 1;i <= t;i++){
+        d = s * i;
+        cout << d << endl;
+    }
+}
+#endif
+
+#ifdef task5
+int main(){
+    double s = 0.01,t_s=0;
+    int d;
+    cin >> d;
+    if(d < 1){
+        cout << "Введите больше 1" << endl;
+        return 1;
+    }
+    for (int i = 1;i<=d;i++){
+        s *= 2;
+        t_s += s;
+        cout << s << "\t" << "за"<< "\t" << i <<"\t" << "день" << endl;
+    }
+    cout << "всего"<< "\t" << t_s << endl;
+    return 0;
+}
+#endif
+
+#ifdef task6
+int main(){
+    double f,s = 0,s_k,p;
+    int k,z_k,z = 0;
+    cin >> f;
+    if (f <10){
+        return 1;
+    }
+    for(int i = 1;i <= f;i++){
+        cout << "этаж" << "\t" << i<< "\t" << "сколько комнат" << endl;
+        cin >> k;
+        if (k < 1){
+            return 1;
+        }
+        cout << "Ханято" << endl;
+        cin >> z_k;
+        k += s;
+        z += z_k;
+        s_k = s - z;
+        p = z / k;
+        cout << "всего" << k << "занятых" << z << "свободных" << s_k << "процент" << p<< endl;
+    }
+    
+    return 0;
+}
+#endif
+
