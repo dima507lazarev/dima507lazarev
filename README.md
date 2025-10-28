@@ -435,4 +435,102 @@ int main(){
     return 0;
 }
 #endif
+////////////////////////////
+|
+|
+|
+\/
+ДЗ ЗА 25 ОКТЯРЯ
+////////////////////////////
+#include <iostream>
+using namespace std;
+#define task4
+#ifdef task1
+int main(){
+    const int A = 5;
+    int arr[] = {2,-3,6,4,0};
+    int polo[A];
+    int otrc[A];
+    int p = 0;
+    int o = 0;
+    for(int i = 0;i < A;i++){
+        cout << arr[i] << endl;
+    }
+    for(int i = 0;i < A;i++){
+        if (arr[i] > 0){
+            polo[p] = arr[i];
+            p++;
+            cout << "положительные" << arr[i] << endl;
+        }else if(arr[i] < 0){
+            otrc[o] = arr[i];
+            o++;
+            cout << "Отрицательные" << arr[i] << endl;
+        }else{
+            cout << "нули " << arr[i] << endl;
+        }
+    }
+}
+#endif
+
+#ifdef task2
+int main(){
+    const int A = 5;
+    int arr[A];
+    int s = 0;
+    for(int i = 0;i < A;i++){
+        cin >> arr[i];
+    }
+    for(int i = 0;i < A;i++){
+        if((arr[i]>0 && arr[i+1]> 0) || (arr[i]<0 && arr[i+1]<0)){
+            cout << i << i+1 << endl;
+            s++;
+        }else if(arr[i] == 0){
+            cout << "нет пар" << endl;
+        }
+    }
+}
+#endif
+
+#ifdef task3
+int main(){
+    const int A = 5;
+    int dlinna = 0;
+    int arr[A] = {2,4,6,5,-3};
+    for (int i = 0;i < A;i++){
+        cout<< arr[i] << endl;
+    }
+    for (int i = 0;i < A;i++){
+        if(arr[i]% 2 == 0){
+            int new_dlinna = 1;
+            for(int d = i + 1;d < A && arr[d] % 2 == 0;d++){
+                new_dlinna++;
+                cout << new_dlinna << endl;
+            }
+        }
+    }
+}
+#endif
+
+#ifdef task4
+int main(){
+    const int A = 5;
+    int arr[A];
+    for(int i = 0;i < A;i++){
+        cin >> arr[i];
+    }
+    int max = arr[0];
+    int m = 0;
+    for(int i = 0;i< A;i++){
+        if(arr[i] > max){
+            max = arr[i];
+            m = i;
+        }
+    }
+    for(int i = m + 1;i< A;i++){
+        arr[i] = 1;
+    }
+        
+
+}
+#endif
 
